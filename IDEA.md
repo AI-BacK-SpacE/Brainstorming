@@ -12,3 +12,5 @@
 -
 -
 
+# 가장 기본적 방법
+- Librosa + Aubio + pretty_midi
