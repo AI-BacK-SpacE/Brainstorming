@@ -2,6 +2,7 @@
 - **정의**
   -  **음악 및 오디오 신호 처리를 위한** 파이썬 라이브러리
   -  음악 분석, 오디오 신호 변환 및 기타 오디오 처리 작업을 수행하기 위한 다양한 기능을 제공
+- [공식 GitHub](https://github.com/librosa/librosa)
 ## 주요 기능
 ### 1) 오디오 파일 로드 및 저장
 - 다양한 포맷의 오디오 파일(WAV, MP3 등) 로드 및 저장 가능
@@ -30,4 +31,20 @@ S_db = librosa.amplitude_to_db(abs(D), ref=np.max)  # dB 변환
 ```py
 mfccs = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13)
 chroma = librosa.feature.chroma_stft(y=y, sr=sr)
+```
+### 그외 기타 등등
+- 템포 및 비트 추출
+- 오디오 변환
+- 신호 분리 및 필터링
+
+# 2. Aubio
+- 오디오 및 음악 신호 분석을 위한 오픈 소스 라이브러리
+- C 언어로 작성되었으며, 파이썬 모듈을 통해서도 사용가능
+- [공식 메뉴얼](https://aubio.org/manual/latest/)
+- [공식 GitHub](https://github.com/aubio/aubio)
+
+### 1) 피치 추정
+```py
+
+
 ```
